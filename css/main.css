@@ -1,0 +1,106 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+
+  background-color: #0A1C2E;
+  color: #F1F1F2;
+
+  height: 100%;
+  font-family: 'Baloo Da 2', cursive;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+}
+
+.blurred-background {
+  background: url('../img/backgroundblue.jpg');
+  background-size: cover;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  position: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.social-media-block {
+  display: flex;
+  text-align: center;
+  min-height: 5rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.social-media-link {
+  flex-grow: 1;
+}
+
+.social-media-icon {
+  margin-top: 0.5rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-media-icon:hover,
+.social-media-icon:focus {
+  margin-top: 0;
+  height: 5rem;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -2rem;
+}
+
+.page-wrap:after {
+  display: block;
+}
+
+.header {
+  padding: 2rem 0.5rem;;
+  margin: auto;
+  width: fit-content;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #154961;
+  opacity: 60%;
+}
+
+.main-content {
+  margin: auto;
+  width: calc(100% - 5rem);
+  max-width: 500px
+}
+
+a {
+  text-decoration: none;
+  color: #3C95A4;
+
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .4)) contrast(200%);
+  margin-bottom: 2rem;
+  font-size: large;
+  font-size: large;
+  transition: 0.3s;
+}
+
+a:hover {
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .4)) contrast(400%);
+}
+
+footer {
+  height: 2rem;
+  background-color: #0A1C2E;
+  width: 100%;
+  text-align: center;
+  line-height: 2rem;
+}
